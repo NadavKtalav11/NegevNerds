@@ -55,36 +55,39 @@ To set up the project locally:
 Clone the repository to your local machine using the following command:
 ```bash
 git clone https://github.com/yourusername/NegevNerds.git
-
+```
 ### Step 2: Install Frontend Dependencies
 Navigate to the ReactNN directory and install the necessary dependencies:
 
-bash
-Copy code
+```bash
 cd NegevNerds/ReactNN
 npm install
+```
 ### Step 3: Backend Setup
 1. Set up a virtual environment:
-bash
+```bash
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 2. Install Python dependencies:
-bash
+```bash
 Copy code
 pip install -r requirements.txt
-
+```
 ### Step 4: Running the Application
 Frontend:
 To run the frontend application:
 
-bash
+```bash
 Copy code
 npm start
+```
 Backend:
 To run the backend application:
 
-bash
+```bash
 Copy code
 python app.py
+```
 Now you should be able to access the application at http://localhost:3000 for the frontend and http://localhost:5000 for the backend.
