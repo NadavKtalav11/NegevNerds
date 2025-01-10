@@ -1,0 +1,130 @@
+/* Login.css */
+.welcome-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* רקע בהיר */
+}
+
+.background-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/logoNN.png'); /* הלוגו */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3; /* שקיפות לתמונה בלבד */
+  z-index: 0; /* מתחת לכותרת */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* כל התוכן מעל התמונה */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.7); /* טופס שקוף עם 70% שקיפות */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* רוחב מקסימלי */
+  text-align: center;
+}
+
+.instruction {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  direction: rtl;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  text-align: center; /* יישור לימין */
+  display: flex;
+  flex-direction: column;
+  direction: ltr; 
+  align-items: center;
+}
+
+.input-group input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    text-align: right; /* יישור הטקסט של הקלט לימין */
+}
+
+.bottom_line {
+  text-align: right; /* יישור לימין */
+  direction: rtl;
+  display: flex;
+  align-items: center; /* ממרכז את האלמנטים אנכית */
+}
+
+.new-user-text {
+  font-size: 16px; /* גודל טקסט */
+}
+
+.sign-up-link {
+  font-size: 1rem;
+  color: blue; /* צבע כחול */
+  text-decoration: underline; /* קו תחתון */
+  border: none; /* מבטל גבול אם יש */
+  background: none; /* מבטל רקע אם יש */
+  cursor: pointer; /* הופך את הקישור ללחיץ */
+}
+
+.submit-button {
+  background-color: white; /* צבע רקע לבן */
+  color: #333; /* טקסט כהה שיבלוט על הרקע הלבן */
+  font-size: 1rem; /* גודל טקסט קטן יותר */
+  padding: 8px 20px; /* פדינג קטן יותר */
+  border: 1px solid #ccc; /* גבול אפור */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  align-self: flex-start; /* יישור לשמאל */
+}
+
+.submit-button:hover {
+  background-color: #f1f1f1; /* צבע רקע בהיר בהצלחה */
+}

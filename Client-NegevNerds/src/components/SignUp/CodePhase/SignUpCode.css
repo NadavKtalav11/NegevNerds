@@ -1,0 +1,32 @@
+/* SignUpCode.css */  
+
+.code-input-group {
+  text-align: center; /* יישור לימין */
+  display: flex;
+  flex-direction: column;
+  direction: ltr; 
+  align-items: center;
+}
+
+.code-input-group input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 30%;
+  text-align: center; /* יישור הטקסט של הקלט לימין */
+}
+
+.code-submit-button {
+  background-color: white; /* צבע רקע לבן */
+  color: #333; /* טקסט כהה שיבלוט על הרקע הלבן */
+  font-size: 1rem; /* גודל טקסט קטן יותר */
+  padding: 8px 20px; /* פדינג קטן יותר */
+  border: 1px solid #ccc; /* גבול אפור */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  align-self: center; /* יישור לשמאל */
+}

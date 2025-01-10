@@ -1,0 +1,79 @@
+/* סגנון כללי לדף הוספת קורס */
+.open-course-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* סגנון עבור הטופס להוספת קורס */
+.form-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* כותרת הטופס */
+.form-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* סגנון לשדות קלט (input, textarea, file) */
+.search-input-open {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #d38a67;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    direction: rtl; /* Text direction set to Right-to-Left */
+    text-align: right; /* Align the text to the right */
+}
+
+/* כאשר שדה קלט ממוקד */
+.search-input-open:focus {
+    outline: none;
+    border-color: #f5a623;
+    background-color: #fff;
+}
+
+/* סגנון לכפתור הוספת קורס */
+.search-button {
+    background-color: #f5a623;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 20px;
+    width: 100%; /* Matches width with input fields */
+    max-width: 500px; /* Consistent width */
+}
+
+.search-button:hover {
+    background-color: #e59428;
+}
+
+/* סגנון למכולה של השדה (במקרה של tooltip או גמישות בעיצוב) */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

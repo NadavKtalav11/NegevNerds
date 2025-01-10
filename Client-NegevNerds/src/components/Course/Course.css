@@ -1,0 +1,99 @@
+/* סגנון לדף קורס */
+.course-page {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.course-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 30px; /* הוספתי רווח בין הכותרת לכפתור */
+}
+
+/* חלון עדכונים אחרונים */
+.updates-container {
+    margin-top: 40px;
+}
+
+.search-results-table {
+    width: 100%;
+    border-collapse: collapse; /* משלב את הגבולות */
+    margin-top: 20px;
+}
+
+.search-results-table th, .search-results-table td {
+    padding: 12px 15px; /* ריווח סביב התאים */
+    border: 1px solid #ddd; /* גבול דק סביב כל תא */
+    text-align: center; /* אליינמנט של טקסט במרכז */
+}
+
+.search-results-table th {
+    cursor: pointer;
+    background-color: #f4f4f4; /* צבע רקע בהיר לכותרות */
+    font-weight: bold; /* כותרות בולטות */
+}
+
+.search-results-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* צבע רקע שונה לכל שורה זוגית */
+}
+
+.search-results-table tr:hover {
+    background-color: #e0e0e0; /* צבע רקע בהובר */
+}
+
+.search-results-table td button {
+    background-color: #4CAF50; /* צבע רקע לכפתור */
+    color: white; /* צבע טקסט לכפתור */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-results-table td button:hover {
+    background-color: #45a049; /* שינוי צבע כפתור בהובר */
+}
+
+.favorite-button {
+    border: 2px solid #d38a67; /* גבול בצבע כהה יותר */
+    border-radius: 50%; /* עיגול */
+    font-size: 24px;
+    width: 40px;  /* רוחב */
+    height: 40px; /* גובה */
+    padding: 10px;  /* ריווח פנימי */
+    display: flex;  /* הופך את הכפתור למרכזי */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* צבע טקסט לבן */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+    color: #8f5d45; /* כחול כהה כאשר עכבר מעל */
+    transform: scale(1.1); /* הגדלה כאשר העכבר מעל */
+}
+
+.favorite-button:active {
+    transform: scale(0.95); /* אפקט לחיצה */
+}
+
+.favorite-button i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.favorite-button .fa-star {
+    color: gold; /* צובעים את הכוכב בצהוב כשיש מועדף */
+}  

@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "email": "nadav@post.bgu.ac.il",
+      "password": "Nadav111!!",
+      "first_name": "נדב",
+      "last_name": "קטלב"
+    },
+    {
+      "email": "David@post.bgu.ac.il",
+      "password": "David222@@",
+      "first_name": "דוד",
+      "last_name": "וולודרסקי"
+    },
+    {
+      "email": "Noa@bgu.ac.il",
+      "password": "Noa333()",
+      "first_name": "נועה",
+      "last_name": "עבודי"
+    },
+    {
+      "email": "Shachar@bgu.ac.il",
+      "password": "Shachar444$$", 
+      "first_name": "שחר", 
+      "last_name": "כהן" 
+    }
+  ],
+  "courses": [
+    {
+      "courseId" :"372.1.3503",
+      "name": "בינה מלאכותית",
+      "syllabus_content_pdf":  "Syllabus_AI.pdf"
+    },
+    {
+      "courseId" : "382.1.2705",
+      "name": "אנליזה נומרית",
+      "syllabus_content_pdf":  "Syllabus_anl.pdf"
+    },
+    {
+      "courseId" : "372.1.3501",
+      "name": "הנדסת איכות תוכנה",
+      "syllabus_content_pdf":  "Syllabus_software.pdf"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+.upload-question-content-page {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center; /* למרכז את כל השורה */
+    align-items: center; /* יישור אנכי */
+    gap: 20px; /* רווח בין האלמנטים */
+    padding: 10px;
+    border-radius: 1px; /* פינות מעוגלות */
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    padding: 10px;
+    background-color: #fdfbfa; /* צבע רקע כתום */
+    color: rgb(7, 7, 7); /* צבע טקסט */
+    border-radius: 5px; /* פינות מעוגלות */
+    font-size: 1.2rem; /* גודל טקסט */
+    min-width: 150px; /* רוחב מינימלי כדי ליישר */
+    text-align: center; /* יישור טקסט במרכז */
+  }
+
+  .add-question-button {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #d38a67; /* גבול בגודל 2px עם צבע של גבול דמוי-חום */
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px; /* גובה אחיד עם השדה */
+    width: 100px;
+}
+
+.add-question-button:hover {
+  background-color: #e59428; /* Darker shade on hover */
+}
+
+.add-question-button:disabled {
+  background-color: #cccccc; /* Gray color when disabled */
+  border: none;
+  cursor: not-allowed;
+}
+.question-content-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.question-content-field {
+    width: 100%; /* הגדרה רוחב אחיד */
+    max-width: 500px; /* מקסימום רוחב */
+    min-width: 500px; /* מקסימום רוחב */
+    padding: 10px; /* ריווח פנימי */
+    border-radius: 8px;
+    border: 1px solid #d38a67;
+    font-size: 1rem; /* גודל גופן */
+    box-sizing: border-box; /* כולל ריווחים בגבול */
+  }
+
+  .question-button-row {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; /* מרכז את הכפתורים אופקית */
+    gap: 20px; /* רווח בין הכפתורים */
+    bottom: 20px; /* ריווח מתחתית הטופס */
+    width: 100%; /* רוחב מלא */
+  }
+
+  
+.label-question-content {
+  min-width: 150px; /* רוחב מינימלי לתוויות */
+  text-align: right;
+  font-size: 20px;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #3c3c3b; /* צבע רקע */
+  color: white;
+  font-size: 15px;
+  border-radius: 100%; /* מעגלי */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}

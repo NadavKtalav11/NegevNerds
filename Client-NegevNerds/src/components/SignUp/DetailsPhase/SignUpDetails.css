@@ -1,0 +1,141 @@
+/* Center form elements */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Group inputs and ensure uniformity */
+.input-group {
+    width: 100%;
+    max-width: 400px; /* Consistent maximum width for all inputs */
+}
+
+/* Style for input containers */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Ensure all input fields have the same width */
+.input-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    direction: rtl; /* Hebrew alignment */
+    transition: border 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for focus state */
+}
+
+/* Remove dotted outline on input focus and customize focus style */
+.input-group input:focus {
+    outline: none; /* Remove default browser outline */
+    border: 2px solid #0078d7; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5); /* Optional glow effect */
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    top: 100%;
+    right: 0; /* Align to the right */
+    background-color: #f9f9f9; /* Tooltip background */
+    border: 1px solid #ccc; /* Tooltip border */
+    padding: 5px 10px; /* Tooltip padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Tooltip font size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    z-index: 10; /* Ensure tooltip is above other elements */
+    white-space: nowrap; /* Prevent text wrapping */
+    direction: rtl; /* Align for Hebrew text */
+    text-align: right; /* Align text to the right */
+}
+
+/* Style for the password input container */
+.password-input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Tooltip for password rules */
+.password-tooltip {
+    position: absolute;
+    top: 100%; /* Position below the input field */
+    right: 0; /* Align to the right */
+    background-color: #f9f9f9; /* Tooltip background */
+    border: 1px solid #ccc; /* Tooltip border */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Tooltip font size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    z-index: 10; /* Ensure tooltip is above other elements */
+    width: 300px; /* Fixed width for password tooltip */
+    direction: rtl; /* Hebrew alignment */
+    text-align: right; /* Align text to the right */
+}
+
+.password-tooltip p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.password-tooltip ul {
+    margin: 5px 0 0 15px;
+    padding: 0;
+    list-style-type: disc;
+    direction: rtl; /* Ensure the list is properly aligned for Hebrew */
+    text-align: right; /* Align text content to the right */
+}
+
+.password-tooltip li {
+    margin: 5px 0;
+    direction: rtl; /* Hebrew alignment */
+}
+
+/* Button styling */
+.submit-button {
+    width: 100%;
+    max-width: 400px; /* Ensure button matches input width */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+}
+
+.submit-button:disabled {
+    background-color: #cccccc; /* Gray color when disabled */
+    cursor: not-allowed;
+}
+
+/* Message styling */
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red; /* Default for error messages */
+    text-align: center;
+}
+
+.message.success {
+    color: green; /* Use for success messages */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .input-group input,
+    .password-input-container,
+    .submit-button {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}
