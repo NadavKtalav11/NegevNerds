@@ -1,91 +1,57 @@
-NegevNerds
-NegevNerds is a collaborative web-based platform designed to help university students share and interact with exam-related resources.
- The platform enables users to post exam questions, participate in discussions, and provide feedback through reactions and comments. 
-It aims to foster a community-driven environment for academic success.
+# Negev Nerds
 
-Features
-Exam Questions Repository:
+**Negev Nerds** is a collaborative platform designed for university students to share and discuss exam questions. It serves as a space for students to upload past exams, comment on them, and discuss answers to help each other prepare for upcoming exams. The platform promotes learning by providing an organized, searchable collection of exams and questions.
 
-Users can upload exam questions with details such as year, semester, moed.
-Comment and Reaction System:
+## Features
 
-Comments can be added to questions to facilitate discussions.
-Reactions (using emojis) allow users to quickly provide feedback on comments.
-Topic and Tag Management:
+- **Post Exam Questions**: Students can upload past exam questions to help others prepare. This functionality includes the ability to add relevant metadata (year, semester, moed).
+- **Comment on Questions**: Each exam question has a comment section where students can leave explanations, clarifications, or additional information to help other students understand the question better.
+- **Like Reactions**: Students can react to comments using emojis, helping highlight useful or popular responses.
+- **Search Functionality**: Users can search for exam questions based on keywords, year, semester, and course name, making it easy to find relevant content.
+- **User Management**: Only registered and logged-in users can post, comment, and interact with content.
 
-Questions and courses are categorized by topics to make searching and browsing easier.
-Questions are linked to specific topics for better organization.
-Course Management:
+## Technologies Used
 
-Courses are managed by designated managers who oversee uploaded content.
-Students can associate themselves with courses to receive tailored notifications and updates.
-User Notifications:
+- **Frontend**: 
+  - React.js: A JavaScript library for building user interfaces.
+  - Redux: A state management library to manage the state of the app.
+  - Axios: A promise-based HTTP client for making requests from the frontend to the backend.
+  
+- **Backend**: 
+  - Python with Flask/Django: Backend web framework for building APIs and handling requests.
+  - SQLAlchemy: ORM for interacting with the database, managing data models, and running queries.
+  
+- **Database**: 
+  - PostgreSQL/SQLite: Relational databases for storing users, courses, questions, and other related data.
 
-The platform sends notifications for updates, comments, and approvals, ensuring users stay informed.
-Language Support:
+- **Version Control**: 
+  - Git: A version control system to track changes and collaborate.
+  - GitHub: A cloud repository platform to store and share the project codebase.
 
-Supports English and Hebrew letter-specific models to handle a multilingual user base effectively.
-Technology Stack
-Backend: Python, Flask, SQLAlchemy
+## Project Structure
 
-The backend handles data persistence, business logic, and communication with the database.
-Key models include:
-UserModel, CourseModel, ExamModel, CommentModel, ReactionModel, and more.
-Custom models dynamically generated for English and Hebrew alphabet-based tables.
+The project is divided into two main sections:
 
-Frontend: React.js
+### 1. **NegevNerds (Backend)**
 
-Provides an intuitive user interface for seamless interaction.
-Components include forms for question submission, discussion threads, and notifications.
+This is the backend application that handles all the business logic, database interactions, and API requests. It is built with Python using Flask/Django. Key components of the backend:
+- **Models**: Represent the database schema using SQLAlchemy.
+- **Controllers**: Handle API requests, process data, and return responses.
+- **Authentication**: Manages user login, registration, and access control.
 
-Database:
+### 2. **ReactNN (Frontend)**
 
-Relational database for storing structured data (e.g., user profiles, courses, exams, comments).
-Relationships are managed using SQLAlchemy ORM.
-Key Models and Relationships
-User Management:
+This is the frontend application built with React.js. It communicates with the backend through API requests and renders the user interface. Key components of the frontend:
+- **Components**: Reusable building blocks of the UI, such as buttons, input forms, and lists.
+- **Pages**: Represent different views or sections of the app (e.g., Home, Post Exam, My Exams).
+- **State Management**: Redux handles the global application state, including user authentication and content display.
 
+## Setup
 
-How to Run the Project
-Clone the Repository:
+To set up the project locally:
 
-bash
-Copy code
-git clone https://github.com/your-username/negev-nerds.git
-cd negev-nerds
-Backend Setup:
+### Step 1: Clone the Repository
 
-Install required Python packages:
-bash
-Copy code
-pip install -r requirements.txt
-Run the backend server:
-bash
-Copy code
-python app.py
-Frontend Setup:
-
-Navigate to the ReactNN directory:
-bash
-Copy code
-cd ReactNN
-Install dependencies:
-bash
-Copy code
-npm install
-Run the frontend:
-bash
-Copy code
-npm start
-Access the Application: Open your browser and go to http://localhost:3000.
-
-Contributing
-We welcome contributions to NegevNerds! Please follow these steps:
-
-Fork the repository.
-Create a new branch:
-bash
-Copy code
-git checkout -b feature-name
-Commit your changes and push to your fork.
-Open a pull request with a detailed description of your changes.
+Clone the repository to your local machine using the following command:
+```bash
+git clone https://github.com/yourusername/NegevNerds.git
