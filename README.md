@@ -86,4 +86,4 @@ To run the backend application:
 ```bash
 python app.py
 ```
-Now you should be able to access the application at http://localhost:3000 for the frontend and http://localhost:5000 for the backend.
+Now you should be able to access the application at http://localhost:3000 for the frontend and http://localhost:5001 for the backend.
